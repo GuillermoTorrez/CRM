@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load tailwind_filters %}
+{% block content %}
+    <h1>Are you sure you want to Delete this Lead </h1>
+    <form method="POST" > <!-- action="."-->
+       <!-- {{ form }} If you decide form as a paragrap -->
+       {% csrf_token %}
+       {{ form |crispy }}
+       <button type="submit">Delete</button>
+    </form>           
+{% endblock content %}
+     

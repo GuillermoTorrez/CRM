@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load tailwind_filters %}
+{% block content %}
+<div class="max-w-lg mx-auto">
+    <h1 class="text-4xl py-4 text-gray-600">Update Agent </h1>
+    <form method="POST" > <!-- action="."-->
+       <!-- {{ form }} If you decide form as a paragrap -->
+       {% csrf_token %}
+       {{ form |crispy }}
+       <button type="submit" class="w-full text-white bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded-md">Update</button>
+    </form>           
+{% endblock content %}
+     
