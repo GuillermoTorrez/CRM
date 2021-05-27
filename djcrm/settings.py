@@ -11,16 +11,20 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 from pathlib import Path
 import environ
-env = environ.Env(
-    DEBUG=(bool, False)
-)
 
-READ_DOT_ENV_FILE = env.bool('READ_DOT_ENV_FILE', default=False)
-if READ_DOT_ENV_FILE:
-    environ.Env.read_env()
+DEBUG=True
+SECRET_KEY='django-insecure-lrxv7@a@_tlo0t=uu44r6h&kuq*+8+py!##%7imvf42o5&sn6-'
 
-DEBUG = env('DEBUG')
-SECRET_KEY = env('SECRET_KEY')
+#env = environ.Env(
+#    DEBUG=(bool, False)
+#)
+
+#READ_DOT_ENV_FILE = env.bool('READ_DOT_ENV_FILE', default=False)
+#if READ_DOT_ENV_FILE:
+#    environ.Env.read_env()
+
+#DEBUG = env('DEBUG')
+#SECRET_KEY = env('SECRET_KEY')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
