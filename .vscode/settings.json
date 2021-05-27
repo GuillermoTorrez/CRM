@@ -23,5 +23,6 @@
     "editor.gotoLocation.alternativeImplementationCommand": "editor.action.peekDefinition",
     "editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.peekDefinition",
     "editor.stablePeek": true,
-    "editor.peekWidgetDefaultFocus": "editor"
+    "editor.peekWidgetDefaultFocus": "editor",
+    "git.ignoreLimitWarning": true
 }
