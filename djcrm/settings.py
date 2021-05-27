@@ -153,8 +153,6 @@ LOGIN_REDIRECT_URL = '/leads'
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_URL = '/login'
 
-
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
