@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-
-# Created by https://www.toptal.com/developers/gitignore/api/python
-# Edit at https://www.toptal.com/developers/gitignore?templates=python
-
-### Python ###
-=======
->>>>>>> 09cca36cd8460685c45ca17a7da50da09caab616
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -22,11 +14,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-<<<<<<< HEAD
-=======
 lib/
 lib64/
->>>>>>> 09cca36cd8460685c45ca17a7da50da09caab616
 parts/
 sdist/
 var/
@@ -61,10 +50,6 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-<<<<<<< HEAD
-pytestdebug.log
-=======
->>>>>>> 09cca36cd8460685c45ca17a7da50da09caab616
 
 # Translations
 *.mo
@@ -85,10 +70,6 @@ instance/
 
 # Sphinx documentation
 docs/_build/
-<<<<<<< HEAD
-doc/_build/
-=======
->>>>>>> 09cca36cd8460685c45ca17a7da50da09caab616
 
 # PyBuilder
 target/
@@ -110,12 +91,6 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-<<<<<<< HEAD
-# poetry
-#poetry.lock
-
-=======
->>>>>>> 09cca36cd8460685c45ca17a7da50da09caab616
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
@@ -127,23 +102,13 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-<<<<<<< HEAD
-# .env
-.env/
-.venv/
-=======
 .env
 .venv
->>>>>>> 09cca36cd8460685c45ca17a7da50da09caab616
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
-<<<<<<< HEAD
-pythonenv*
-=======
->>>>>>> 09cca36cd8460685c45ca17a7da50da09caab616
 
 # Spyder project settings
 .spyderproject
@@ -162,19 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-<<<<<<< HEAD
-
-# pytype static type analyzer
-.pytype/
-
-# operating system-related files
-# file properties cache/storage on macOS
-*.DS_Store
-# thumbnail cache on Windows
-Thumbs.db
-
-# profiling data
-.prof
-
-=======
->>>>>>> 09cca36cd8460685c45ca17a7da50da09caab616
