@@ -13,7 +13,7 @@ from pathlib import Path
 import environ
 
 DEBUG=True
-SECRET_KEY='django-insecure-lrxv7@a@_tlo0t=uu44r6h&kuq*+8+py!##%7imvf42o5&sn6-'
+
 
 #env = environ.Env(
 #    DEBUG=(bool, False)
