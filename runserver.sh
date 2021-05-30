@@ -1,1 +1,1 @@
-python manage.py collectstatics
+python manage.py collectstatics --no-input
