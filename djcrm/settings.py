@@ -16,15 +16,14 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
+# remember export READ_DOT_ENV_FILE=True
 READ_DOT_ENV_FILE = env.bool('READ_DOT_ENV_FILE', default=False)
 if READ_DOT_ENV_FILE:
     environ.Env.read_env()
 
 DEBUG = env('DEBUG')
 SECRET_KEY = env('SECRET_KEY')
-
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 ALLOWED_HOSTS = []
 
 
@@ -160,7 +159,7 @@ LOGIN_URL = '/login'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'tailwind'
 CRISPY_TEMPLATE_PACK = 'tailwind'
-
+TAILWIND_APP_NAME = 'theme'
 
 if not DEBUG:
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -173,9 +172,7 @@ if not DEBUG:
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
     X_FRAME_OPTIONS = "DENY"
-
     ALLOWED_HOSTS = ["*"]
-
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_HOST = env("EMAIL_HOST")
     EMAIL_HOST_USER = env("EMAIL_HOST_USER")
@@ -183,7 +180,6 @@ if not DEBUG:
     EMAIL_USE_TLS = True
     EMAIL_PORT = env("EMAIL_PORT")
     DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
-
 
 LOGGING = {
     'version': 1,
@@ -199,4 +195,3 @@ LOGGING = {
     },
 }
 
-TAILWIND_APP_NAME = 'theme'
